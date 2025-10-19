@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCDC Public Health Excellence Awards 2025</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .trophy {
+            font-size: 4em;
+            margin: 20px 0;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #2a5298;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .info-box h3 {
+            color: #2a5298;
+            margin-bottom: 10px;
+        }
+        
+        .text-diagram {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .text-diagram h4 {
+            color: #2a5298;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+
+        .text-diagram ul, .text-diagram ol {
+            padding-left: 20px;
+        }
+        
+        .text-diagram li {
+            margin-bottom: 10px;
+        }
+
+        .text-diagram ul ul, .text-diagram ol ol {
+            margin-top: 10px;
+        }
+
+        .award-category {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+
+        .award-category:hover {
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .award-category h3 {
+            color: #2a5298;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .award-category .icon {
+            font-size: 2em;
+            margin-right: 10px;
+        }
+
+        .criteria-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .criteria-table th {
+            background: #2a5298;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .criteria-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .criteria-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .weight {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        .prize-box {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .prize-box h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .prize-item {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            backdrop-filter: blur(10px);
+        }
+
+        .committee-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .committee-card h4 {
+            color: #2a5298;
+            margin-bottom: 10px;
+        }
+
+        .committee-card ul {
+            padding-left: 20px;
+        }
+
+        .committee-card li {
+            margin: 8px 0;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background: #2a5298;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .nav-bar {
+            background: #1e3c72;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background 0.3s;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .nav-links li a:hover {
+            background: #2a5298;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1e3c72;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #2a5298;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-switcher button {
+            background: none;
+            border: 1px solid white;
+            color: white;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .lang-switcher button.active {
+            background: #667eea;
+        }
+        
+        [dir="rtl"] .committee-card ul {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+        
+        [dir="rtl"] .text-diagram ul, [dir="rtl"] .text-diagram ol {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+
+        @media (max-width: 992px) {
+            .nav-links {
+                gap: 5px;
+            }
+            .nav-links li a {
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .criteria-table {
+                font-size: 0.9em;
+            }
+
+            .nav-bar {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="nav-bar">
+        <ul class="nav-links">
+            <li><a href="#home" class="lang" data-en="Home" data-ar="الرئيسية">Home</a></li>
+            <li class="dropdown">
+                <a href="#awards" class="lang" data-en="Awards" data-ar="الجوائز">Awards</a>
+                <div class="dropdown-content">
+                    <a href="#directors-prize" class="lang" data-en="Director's Grand Prize" data-ar="جائزة المدير الكبرى">Director's Grand Prize</a>
+                    <a href="#disease-surveillance" class="lang" data-en="Excellence in Disease Surveillance" data-ar="التميز في مراقبة الأمراض">Excellence in Disease Surveillance</a>
+                    <a href="#outbreak-response" class="lang" data-en="Outstanding Outbreak Response" data-ar="الاستجابة المتميزة للتفشي">Outstanding Outbreak Response</a>
+                    <a href="#innovation" class="lang" data-en="Innovation in Public Health" data-ar="الابتكار في الصحة العامة">Innovation in Public Health</a>
+                    <a href="#health-promotion" class="lang" data-en="Excellence in Health Promotion" data-ar="التميز في تعزيز الصحة">Excellence in Health Promotion</a>
+                    <a href="#collaborative-spirit" class="lang" data-en="The Collaborative Spirit Award" data-ar="جائزة روح التعاون">The Collaborative Spirit Award</a>
+                    <a href="#champion-award" class="lang" data-en="Public Health Champion Award" data-ar="جائزة بطل الصحة العامة">Public Health Champion Award</a>
+                </div>
+            </li>
+            <li><a href="#criteria" class="lang" data-en="Criteria" data-ar="المعايير">Criteria</a></li>
+            <li><a href="#organization" class="lang" data-en="Organization" data-ar="التنظيم">Organization</a></li>
+            <li><a href="#submission" class="lang" data-en="Submission" data-ar="التقديم">Submission</a></li>
+            <li><a href="#process" class="lang" data-en="Process" data-ar="العملية">Process</a></li>
+            <li><a href="#prizes" class="lang" data-en="Prizes" data-ar="الجوائز">Prizes</a></li>
+            <li><a href="#program" class="lang" data-en="Program" data-ar="البرنامج">Program</a></li>
+            <li><a href="#budget" class="lang" data-en="Budget" data-ar="الميزانية">Budget</a></li>
+            <li><a href="#metrics" class="lang" data-en="Metrics" data-ar="المقاييس">Metrics</a></li>
+            <li><a href="#next-steps" class="lang" data-en="Next Steps" data-ar="الخطوات التالية">Next Steps</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button onclick="switchLanguage('en')" class="active">English</button>
+            <button onclick="switchLanguage('ar')">العربية</button>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="trophy">🏆</div>
+        <h1 class="lang" data-en="NCDC Public Health Excellence Awards 2025" data-ar="جوائز المركز الوطني لمكافحة الأمراض للتميز في الصحة العامة 2025">NCDC Public Health Excellence Awards 2025</h1>
+        <p class="lang" data-en="Celebrating Outstanding Achievements in Public Health" data-ar="الاحتفاء بالإنجازات المتميزة في مجال الصحة العامة">Celebrating Outstanding Achievements in Public Health</p>
+        <p style="margin-top: 15px; font-size: 1em;">
+            <strong class="lang" data-en="Hosted by:" data-ar="برعاية:">Hosted by:</strong> <span class="lang" data-en="National Center for Disease Control - Director General" data-ar="المركز الوطني لمكافحة الأمراض - المدير العام">National Center for Disease Control - Director General</span><br>
+            <strong class="lang" data-en="Proposed by:" data-ar="مقترح من:">Proposed by:</strong> <span class="lang" data-en="Technical Cooperation Office (TCO)" data-ar="مكتب التعاون الفني (TCO)">Technical Cooperation Office (TCO)</span>
+        </p>
+    </div>
+
+    <div class="content">
+
+        <div id="home" class="section">
+            <h2 class="section-title lang" data-en="Event Overview" data-ar="نظرة عامة على الحدث">Event Overview</h2>
+            <div class="info-box">
+                <h3 class="lang" data-en="📅 Event Date: Thursday, January 22, 2026" data-ar="📅 تاريخ الحدث: الخميس، 22 يناير 2026">📅 Event Date: Thursday, January 22, 2026</h3>
+                <p><strong class="lang" data-en="Focus:" data-ar="التركيز:">Focus:</strong> <span class="lang" data-en="Celebrating outstanding public health achievements of 2025" data-ar="الاحتفاء بإنجازات الصحة العامة المتميزة لعام 2025">Celebrating outstanding public health achievements of 2025</span></p>
+                <p><strong class="lang" data-en="Venue:" data-ar="المكان:">Venue:</strong> <span class="lang" data-en="NCDC Main Conference Hall" data-ar="قاعة المؤتمرات الرئيسية للمركز الوطني لمكافحة الأمراض">NCDC Main Conference Hall</span></p>
+                <p><strong class="lang" data-en="Expected Attendees:" data-ar="الحاضرون المتوقعون:">Expected Attendees:</strong> <span class="lang" data-en="150-200 (All NCDC staff, partners, dignitaries)" data-ar="150-200 (جميع موظفي المركز الوطني لمكافحة الأمراض والشركاء وكبار الشخصيات)">150-200 (All NCDC staff, partners, dignitaries)</span></p>
+            </div>
+
+            <div class="text-diagram">
+                <h4 class="lang" data-en="NCDC Awards Timeline (Oct 2025 - Jan 2026)" data-ar="الجدول الزمني لجوائز المركز الوطني (أكتوبر 2025 - يناير 2026)">NCDC Awards Timeline (Oct 2025 - Jan 2026)</h4>
+                <ul>
+                    <li><strong class="lang" data-en="October 2025:" data-ar="أكتوبر 2025:">October 2025:</strong>
+                        <ul>
+                            <li class="lang" data-en="Week 1: Official Announcement" data-ar="الأسبوع 1: الإعلان الرسمي">Week 1: Official Announcement</li>
+                            <li class="lang" data-en="Weeks 2-3: Form Judging Committee & Release Submission Guidelines" data-ar="الأسبوعان 2-3: تشكيل لجنة التحكيم وإصدار إرشادات التقديم">Weeks 2-3: Form Judging Committee & Release Submission Guidelines</li>
+                            <li class="lang" data-en="Week 4: Support & Q&A Workshop" data-ar="الأسبوع 4: ورشة عمل للدعم والأسئلة والأجوبة">Week 4: Support & Q&A Workshop</li>
+                        </ul>
+                    </li>
+                    <li><strong class="lang" data-en="November 2025:" data-ar="نوفمبر 2025:">November 2025:</strong>
+                        <ul>
+                            <li class="lang" data-en="Full Month: Submission Period Open for all departments" data-ar="الشهر بأكمله: فترة التقديم مفتوحة لجميع الإدارات">Full Month: Submission Period Open for all departments</li>
+                        </ul>
+                    </li>
+                    <li><strong class="lang" data-en="December 2025:" data-ar="ديسمبر 2025:">December 2025:</strong>
+                        <ul>
+                            <li class="lang" data-en="Week 1: Submission Deadline (Dec 5)" data-ar="الأسبوع 1: الموعد النهائي للتقديم (5 ديسمبر)">Week 1: Submission Deadline (Dec 5)</li>
+                            <li class="lang" data-en="Weeks 2-3: Judging Period" data-ar="الأسبوعان 2-3: فترة التحكيم">Weeks 2-3: Judging Period</li>
+                            <li class="lang" data-en="Week 4: Notify Finalists (Dec 22)" data-ar="الأسبوع 4: إخطار المتأهلين للتصفيات النهائية (22 ديسمبر)">Week 4: Notify Finalists (Dec 22)</li>
+                        </ul>
+                    </li>
+                    <li><strong class="lang" data-en="January 2026:" data-ar="يناير 2026:">January 2026:</strong>
+                        <ul>
+                            <li class="lang" data-en="Week 1: Public Announcement of Finalists" data-ar="الأسبوع 1: الإعلان العام عن المتأهلين للتصفيات النهائية">Week 1: Public Announcement of Finalists</li>
+                            <li class="lang" data-en="Week 2: Final Event Preparations" data-ar="الأسبوع 2: التحضيرات النهائية للحدث">Week 2: Final Event Preparations</li>
+                            <li class="lang" data-en="Week 3: Awards Ceremony (Jan 22)" data-ar="الأسبوع 3: حفل توزيع الجوائز (22 يناير)">Week 3: Awards Ceremony (Jan 22)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="awards" class="section">
+            <h2 class="section-title lang" data-en="Award Categories" data-ar="فئات الجوائز">Award Categories</h2>
+            
+            <div id="directors-prize" class="award-category">
+                <h3 class="lang" data-en="<span class='icon'>👑</span>1. The Director's Grand Prize: Project of the Year" data-ar="<span class='icon'>👑</span>1. جائزة المدير الكبرى: مشروع العام"><span class="icon">👑</span>1. The Director's Grand Prize: Project of the Year</h3>
+                <p><strong class="lang" data-en="Description:" data-ar="الوصف:">Description:</strong> <span class="lang" data-en="The most prestigious award for the project demonstrating the highest overall excellence and the most significant impact on the health of the Libyan people in 2025." data-ar="الجائزة الأرقى للمشروع الذي يظهر أعلى مستوى من التميز الشامل والأثر الأكبر على صحة الشعب الليبي في عام 2025.">The most prestigious award for the project demonstrating the highest overall excellence and the most significant impact on the health of the Libyan people in 2025.</span></p>
+                <p><strong class="lang" data-en="Eligibility:" data-ar="الأهلية:">Eligibility:</strong> <span class="lang" data-en="All NCDC projects completed or significantly advanced in 2025" data-ar="جميع مشاريع المركز الوطني لمكافحة الأمراض المنجزة أو التي حققت تقدماً كبيراً في عام 2025">All NCDC projects completed or significantly advanced in 2025</span></p>
+                <p><strong class="lang" data-en="Prize Package:" data-ar="حزمة الجائزة:">Prize Package:</strong> <span class="lang" data-en="Trophy + Certificate + 25,000 LYD Professional Development Fund + Conference attendance for 2 team members" data-ar="كأس + شهادة + صندوق تطوير مهني بقيمة 25,000 دينار ليبي + حضور مؤتمر لعضوين من الفريق">Trophy + Certificate + 25,000 LYD Professional Development Fund + Conference attendance for 2 team members</span></p>
+            </div>
+
+            <!-- Other award categories as before -->
+            <div id="disease-surveillance" class="award-category">
+                <h3 class="lang" data-en="<span class='icon'>📊</span>2. Excellence in Disease Surveillance" data-ar="<span class='icon'>📊</span>2. التميز في مراقبة الأمراض"><span class="icon">📊</span>2. Excellence in Disease Surveillance</h3>
+                <p><strong class="lang" data-en="Description:" data-ar="الوصف:">Description:</strong> <span class="lang" data-en="Recognizes a project or team that has made outstanding improvements to systems of data collection, analysis, and reporting, enhancing the NCDC's ability to monitor and detect health threats." data-ar="تكريم لمشروع أو فريق قام بتحسينات متميزة في أنظمة جمع البيانات وتحليلها وإعداد التقارير، مما يعزز قدرة المركز الوطني لمكافحة الأمراض على مراقبة واكتشاف التهديدات الصحية.">Recognizes a project or team that has made outstanding improvements to systems of data collection, analysis, and reporting, enhancing the NCDC's ability to monitor and detect health threats.</span></p>
+                <p><strong class="lang" data-en="Prize Package:" data-ar="حزمة الجائزة:">Prize Package:</strong> <span class="lang" data-en="Plaque + Certificate + 15,000 LYD Professional Development Fund" data-ar="درع + شهادة + صندوق تطوير مهني بقيمة 15,000 دينار ليبي">Plaque + Certificate + 15,000 LYD Professional Development Fund</span></p>
+            </div>
+
+            <div id="outbreak-response" class="award-category">
+                <h3 class="lang" data-en="<span class='icon'>🚨</span>3. Outstanding Outbreak Response" data-ar="<span class='icon'>🚨</span>3. الاستجابة المتميزة لتفشي الأمراض"><span class="icon">🚨</span>3. Outstanding Outbreak Response</h3>
+                <p><strong class="lang" data-en="Description:" data-ar="الوصف:">Description:</strong> <span class="lang" data-en="Honors the team that showed exceptional speed, effectiveness, and coordination in managing and controlling a public health emergency or disease outbreak." data-ar="تكريم للفريق الذي أظهر سرعة وفعالية وتنسيقًا استثنائيًا في إدارة ومكافحة حالة طوارئ صحية عامة أو تفشي مرض.">Honors the team that showed exceptional speed, effectiveness, and coordination in managing and controlling a public health emergency or disease outbreak.</span></p>
+                <p><strong class="lang" data-en="Prize Package:" data-ar="حزمة الجائزة:">Prize Package:</strong> <span class="lang" data-en="Plaque + Certificate + 15,000 LYD Professional Development Fund" data-ar="درع + شهادة + صندوق تطوير مهني بقيمة 15,000 دينار ليبي">Plaque + Certificate + 15,000 LYD Professional Development Fund</span></p>
+            </div>
+
+            <div id="innovation" class="award-category">
+                <h3 class="lang" data-en="<span class='icon'>🔬</span>4. Innovation in Public Health" data-ar="<span class='icon'>🔬</span>4. الابتكار في الصحة العامة"><span class="icon">🔬</span>4. Innovation in Public Health</h3>
+                <p><strong class="lang" data-en="Description:" data-ar="الوصف:">Description:</strong> <span class="lang" data-en="Celebrates a forward-thinking project that successfully implemented a new technology, novel scientific method, or creative strategy to address a public health challenge." data-ar="الاحتفاء بمشروع ذي رؤية مستقبلية نجح في تطبيق تقنية جديدة أو طريقة علمية مبتكرة أو استراتيجية إبداعية لمواجهة تحدٍ في مجال الصحة العامة.">Celebrates a forward-thinking project that successfully implemented a new technology, novel scientific method, or creative strategy to address a public health challenge.</span></p>
+                <p><strong class="lang" data-en="Prize Package:" data-ar="حزمة الجائزة:">Prize Package:</strong> <span class="lang" data-en="Plaque + Certificate + 15,000 LYD Professional Development Fund" data-ar="درع + شهادة + صندوق تطوير مهني بقيمة 15,000 دينار ليبي">Plaque + Certificate + 15,000 LYD Professional Development Fund</span></p>
+            </div>
+
+            <div id="health-promotion" class="award-category">
+                <h3 class="lang" data-en="<span class='icon'>👥</span>5. Excellence in Health Promotion & Community Engagement" data-ar="<span class='icon'>👥</span>5. التميز في تعزيز الصحة والمشاركة المجتمعية"><span class="icon">👥</span>5. Excellence in Health Promotion & Community Engagement</h3>
+                <p><strong class="lang" data-en="Description:" data-ar="الوصف:">Description:</strong> <span class="lang" data-en="Awarded to the project most successful in empowering communities with health knowledge, fostering behavioral change, and building trust between the public and the NCDC." data-ar="تُمنح للمشروع الأكثر نجاحًا في تمكين المجتمعات بالمعرفة الصحية، وتعزيز التغيير السلوكي، وبناء الثقة بين الجمهور والمركز الوطني لمكافحة الأمراض.">Awarded to the project most successful in empowering communities with health knowledge, fostering behavioral change, and building trust between the public and the NCDC.</span></p>
+                <p><strong class="lang" data-en="Prize Package:" data-ar="حزمة الجائزة:">Prize Package:</strong> <span class="lang" data-en="Plaque + Certificate + 15,000 LYD Professional Development Fund" data-ar="درع + شهادة + صندوق تطوير مهني بقيمة 15,000 دينار ليبي">Plaque + Certificate + 15,000 LYD Professional Development Fund</span></p>
+            </div>
+
+            <div id="collaborative-spirit" class="award-category">
+                <h3 class="lang" data-en="<span class='icon'>🤝</span>6. The Collaborative Spirit Award" data-ar="<span class='icon'>🤝</span>6. جائزة روح التعاون"><span class="icon">🤝</span>6. The Collaborative Spirit Award</h3>
+                <p><strong class="lang" data-en="Description:" data-ar="الوصف:">Description:</strong> <span class="lang" data-en="Honors a project that exemplifies superior teamwork, either between multiple NCDC departments or with external and international partners (e.g., WHO, UNICEF, academic institutions)." data-ar="تكريم لمشروع يجسد العمل الجماعي المتميز، سواء بين إدارات متعددة في المركز الوطني لمكافحة الأمراض أو مع شركاء خارجيين ودوليين (مثل منظمة الصحة العالمية، اليونيسف، المؤسسات الأكاديمية).">Honors a project that exemplifies superior teamwork, either between multiple NCDC departments or with external and international partners (e.g., WHO, UNICEF, academic institutions).</span></p>
+                <p><strong class="lang" data-en="Prize Package:" data-ar="حزمة الجائزة:">Prize Package:</strong> <span class="lang" data-en="Plaque + Certificate + 12,000 LYD Professional Development Fund" data-ar="درع + شهادة + صندوق تطوير مهني بقيمة 12,000 دينار ليبي">Plaque + Certificate + 12,000 LYD Professional Development Fund</span></p>
+                <div class="note">
+                    <strong class="lang" data-en="Note:" data-ar="ملاحظة:">Note:</strong> <span class="lang" data-en="This award is championed by the Technical Cooperation Office (TCO)" data-ar="هذه الجائزة يدعمها مكتب التعاون الفني (TCO)">This award is championed by the Technical Cooperation Office (TCO)</span>
+                </div>
+            </div>
+
+            <div id="champion-award" class="award-category">
+                <h3 class="lang" data-en="<span class='icon'>⭐</span>7. The Public Health Champion Award (Individual Recognition)" data-ar="<span class='icon'>⭐</span>7. جائزة بطل الصحة العامة (تكريم فردي)"><span class="icon">⭐</span>7. The Public Health Champion Award (Individual Recognition)</h3>
+                <p><strong class="lang" data-en="Description:" data-ar="الوصف:">Description:</strong> <span class="lang" data-en="An award for a single individual, at any level, who has shown extraordinary personal dedication, leadership, and commitment to public health, serving as an inspiration to colleagues." data-ar="جائزة لفرد واحد، على أي مستوى، أظهر تفانيًا شخصيًا وقيادة والتزامًا استثنائيًا بالصحة العامة، وكان مصدر إلهام لزملائه.">An award for a single individual, at any level, who has shown extraordinary personal dedication, leadership, and commitment to public health, serving as an inspiration to colleagues.</span></p>
+                <p><strong class="lang" data-en="Eligibility:" data-ar="الأهلية:">Eligibility:</strong> <span class="lang" data-en="Any NCDC staff member" data-ar="أي موظف في المركز الوطني لمكافحة الأمراض">Any NCDC staff member</span></p>
+                <p><strong class="lang" data-en="Prize Package:" data-ar="حزمة الجائزة:">Prize Package:</strong> <span class="lang" data-en="Trophy + Certificate + Professional certification course sponsorship" data-ar="كأس + شهادة + رعاية دورة شهادة مهنية">Trophy + Certificate + Professional certification course sponsorship</span></p>
+            </div>
+        </div>
+        
+        <div id="criteria" class="section">
+            <h2 class="section-title lang" data-en="Selection Criteria & Scoring Rubric" data-ar="معايير الاختيار ونموذج التقييم">Selection Criteria & Scoring Rubric</h2>
+            <p style="margin-bottom: 20px;" class="lang" data-en="All project submissions will be evaluated using the following standardized criteria. Each criterion carries a specific weight contributing to a total score of 100 points." data-ar="سيتم تقييم جميع المشاريع المقدمة باستخدام المعايير الموحدة التالية. يحمل كل معيار وزنًا محددًا يساهم في مجموع نقاط إجمالي قدره 100 نقطة.">All project submissions will be evaluated using the following standardized criteria. Each criterion carries a specific weight contributing to a total score of 100 points.</p>
+            
+            <table class="criteria-table">
+                <!-- ... criteria table from previous HTML ... -->
+                 <thead>
+                    <tr>
+                        <th class="lang" data-en="Criterion" data-ar="المعيار">Criterion</th>
+                        <th class="lang" data-en="Weight" data-ar="الوزن">Weight</th>
+                        <th class="lang" data-en="Description" data-ar="الوصف">Description</th>
+                        <th class="lang" data-en="Key Questions for Evaluators" data-ar="أسئلة رئيسية للمقيمين">Key Questions for Evaluators</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="lang" data-en="Impact on Public Health" data-ar="التأثير على الصحة العامة">Impact on Public Health</strong></td>
+                        <td><span class="weight">40%</span></td>
+                        <td class="lang" data-en="The measurable effect of the project on the health of the Libyan population" data-ar="الأثر القابل للقياس للمشروع على صحة السكان الليبيين">The measurable effect of the project on the health of the Libyan population</td>
+                        <td class="lang" data-en="
+                            • What specific health outcomes improved?<br>
+                            • How many people were affected?<br>
+                            • Is there quantitative data showing impact?<br>
+                            • Did it address a critical public health priority?
+                        " data-ar="
+                            • ما هي النتائج الصحية المحددة التي تحسنت؟<br>
+                            • كم عدد الأشخاص الذين تأثروا؟<br>
+                            • هل هناك بيانات كمية تظهر التأثير؟<br>
+                            • هل عالج أولوية صحية عامة حرجة؟
+                        ">
+                            • What specific health outcomes improved?<br>
+                            • How many people were affected?<br>
+                            • Is there quantitative data showing impact?<br>
+                            • Did it address a critical public health priority?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Innovation & Creativity" data-ar="الابتكار والإبداع">Innovation & Creativity</strong></td>
+                        <td><span class="weight">20%</span></td>
+                        <td class="lang" data-en="The novelty and originality of the approach or methodology used" data-ar="حداثة وأصالة النهج أو المنهجية المستخدمة">The novelty and originality of the approach or methodology used</td>
+                        <td class="lang" data-en="
+                            • Was a new method or technology introduced?<br>
+                            • Did it solve a problem in a unique way?<br>
+                            • Can this approach be a model for others?<br>
+                            • Does it represent advancement in practice?
+                        " data-ar="
+                            • هل تم تقديم طريقة أو تقنية جديدة؟<br>
+                            • هل حل مشكلة بطريقة فريدة؟<br>
+                            • هل يمكن أن يكون هذا النهج نموذجًا للآخرين؟<br>
+                            • هل يمثل تقدمًا في الممارسة؟
+                        ">
+                            • Was a new method or technology introduced?<br>
+                            • Did it solve a problem in a unique way?<br>
+                            • Can this approach be a model for others?<br>
+                            • Does it represent advancement in practice?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Collaboration & Teamwork" data-ar="التعاون والعمل الجماعي">Collaboration & Teamwork</strong></td>
+                        <td><span class="weight">20%</span></td>
+                        <td class="lang" data-en="The quality and effectiveness of collaboration within NCDC or with external partners" data-ar="جودة وفعالية التعاون داخل المركز الوطني لمكافحة الأمراض أو مع الشركاء الخارجيين">The quality and effectiveness of collaboration within NCDC or with external partners</td>
+                        <td class="lang" data-en="
+                            • How many departments/partners were involved?<br>
+                            • Was coordination effective?<br>
+                            • Did collaboration enhance outcomes?<br>
+                            • Were resources shared efficiently?
+                        " data-ar="
+                            • كم عدد الإدارات/الشركاء المشاركين؟<br>
+                            • هل كان التنسيق فعالاً؟<br>
+                            • هل عزز التعاون النتائج؟<br>
+                            • هل تمت مشاركة الموارد بكفاءة؟
+                        ">
+                            • How many departments/partners were involved?<br>
+                            • Was coordination effective?<br>
+                            • Did collaboration enhance outcomes?<br>
+                            • Were resources shared efficiently?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Sustainability" data-ar="الاستدامة">Sustainability</strong></td>
+                        <td><span class="weight">10%</span></td>
+                        <td class="lang" data-en="The long-term viability and potential for continued impact beyond the project period" data-ar="الجدوى طويلة الأجل وإمكانية استمرار التأثير بعد فترة المشروع">The long-term viability and potential for continued impact beyond the project period</td>
+                        <td class="lang" data-en="
+                            • Can this project continue without external funding?<br>
+                            • Are systems/processes in place for longevity?<br>
+                            • Has capacity been built for continuation?<br>
+                            • Is there a plan for ongoing implementation?
+                        " data-ar="
+                            • هل يمكن أن يستمر هذا المشروع بدون تمويل خارجي؟<br>
+                            • هل توجد أنظمة/عمليات قائمة للاستمرارية؟<br>
+                            • هل تم بناء القدرات للاستمرار؟<br>
+                            • هل هناك خطة للتنفيذ المستمر؟
+                        ">
+                            • Can this project continue without external funding?<br>
+                            • Are systems/processes in place for longevity?<br>
+                            • Has capacity been built for continuation?<br>
+                            • Is there a plan for ongoing implementation?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Clarity of Presentation" data-ar="وضوح العرض">Clarity of Presentation</strong></td>
+                        <td><span class="weight">10%</span></td>
+                        <td class="lang" data-en="How well the project's goals, methods, and results were communicated in the submission" data-ar="مدى جودة توصيل أهداف المشروع وأساليبه ونتائجه في الطلب المقدم">How well the project's goals, methods, and results were communicated in the submission</td>
+                        <td class="lang" data-en="
+                            • Is the problem clearly defined?<br>
+                            • Are methods well-explained?<br>
+                            • Are results presented with evidence?<br>
+                            • Is the submission well-organized?
+                        " data-ar="
+                            • هل المشكلة محددة بوضوح؟<br>
+                            • هل الأساليب مشروحة جيدًا؟<br>
+                            • هل النتائج معروضة بالأدلة؟<br>
+                            • هل الطلب المقدم منظم جيدًا؟
+                        ">
+                            • Is the problem clearly defined?<br>
+                            • Are methods well-explained?<br>
+                            • Are results presented with evidence?<br>
+                            • Is the submission well-organized?
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="text-diagram">
+                 <h4 class="lang" data-en="Scoring Criteria Distribution" data-ar="توزيع معايير التقييم">Scoring Criteria Distribution</h4>
+                 <ul>
+                    <li class="lang" data-en="Impact on Public Health: <strong>40%</strong>" data-ar="التأثير على الصحة العامة: <strong>40%</strong>">Impact on Public Health: <strong>40%</strong></li>
+                    <li class="lang" data-en="Innovation & Creativity: <strong>20%</strong>" data-ar="الابتكار والإبداع: <strong>20%</strong>">Innovation & Creativity: <strong>20%</strong></li>
+                    <li class="lang" data-en="Collaboration & Teamwork: <strong>20%</strong>" data-ar="التعاون والعمل الجماعي: <strong>20%</strong>">Collaboration & Teamwork: <strong>20%</strong></li>
+                    <li class="lang" data-en="Sustainability: <strong>10%</strong>" data-ar="الاستدامة: <strong>10%</strong>">Sustainability: <strong>10%</strong></li>
+                    <li class="lang" data-en="Clarity of Presentation: <strong>10%</strong>" data-ar="وضوح العرض: <strong>10%</strong>">Clarity of Presentation: <strong>10%</strong></li>
+                 </ul>
+            </div>
+        </div>
+        
+        <div id="organization" class="section">
+            <h2 class="section-title lang" data-en="Organizational Structure" data-ar="الهيكل التنظيمي">Organizational Structure</h2>
+            <div class="text-diagram">
+                <h4 class="lang" data-en="Committee Hierarchy" data-ar="التسلسل الهرمي للجنة">Committee Hierarchy</h4>
+                 <ul>
+                    <li><strong class="lang" data-en="Steering Committee (NCDC Director-General - Chair)" data-ar="اللجنة التوجيهية (المدير العام للمركز الوطني - رئيسًا)">Steering Committee (NCDC Director-General - Chair)</strong>
+                        <ul>
+                            <li class="lang" data-en="Oversees:" data-ar="تشرف على:">Oversees:</li>
+                            <li><strong class="lang" data-en="Awards & Judging Committee" data-ar="لجنة الجوائز والتحكيم">Awards & Judging Committee</strong></li>
+                            <li><strong class="lang" data-en="Logistics & Event Management Committee" data-ar="لجنة اللوجستيات وإدارة الفعاليات">Logistics & Event Management Committee</strong></li>
+                            <li><strong class="lang" data-en="Communications & Media Committee" data-ar="لجنة الاتصالات والإعلام">Communications & Media Committee</strong></li>
+                            <li><strong class="lang" data-en="Finance & Sponsorship Committee" data-ar="لجنة المالية والرعاية">Finance & Sponsorship Committee</strong></li>
+                        </ul>
+                    </li>
+                 </ul>
+            </div>
+             <!-- ... committee cards from previous HTML ... -->
+             <div class="committee-card">
+                <h4 class="lang" data-en="1. Steering Committee (Leadership)" data-ar="1. اللجنة التوجيهية (القيادة)">1. Steering Committee (Leadership)</h4>
+                <p><strong class="lang" data-en="Mandate:" data-ar="التكليف:">Mandate:</strong> <span class="lang" data-en="Provide high-level strategic direction, secure institutional support, and ensure the event's integrity and success." data-ar="توفير التوجيه الاستراتيجي عالي المستوى، وتأمين الدعم المؤسسي، وضمان نزاهة ونجاح الحدث.">Provide high-level strategic direction, secure institutional support, and ensure the event's integrity and success.</span></p>
+                <p><strong class="lang" data-en="Members:" data-ar="الأعضاء:">Members:</strong></p>
+                <ul>
+                    <li class="lang" data-en="NCDC Director-General (Chair)" data-ar="المدير العام للمركز الوطني لمكافحة الأمراض (رئيسًا)">NCDC Director-General (Chair)</li>
+                    <li class="lang" data-en="Head of Technical Cooperation Office (Project Lead)" data-ar="رئيس مكتب التعاون الفني (قائد المشروع)">Head of Technical Cooperation Office (Project Lead)</li>
+                    <li class="lang" data-en="Director of Administration & Finance" data-ar="مدير الشؤون الإدارية والمالية">Director of Administration & Finance</li>
+                    <li class="lang" data-en="Senior representative from key technical department" data-ar="ممثل رفيع المستوى من الإدارة الفنية الرئيسية">Senior representative from key technical department</li>
+                </ul>
+            </div>
+
+            <div class="committee-card">
+                <h4 class="lang" data-en="2. Awards & Judging Committee" data-ar="2. لجنة الجوائز والتحكيم">2. Awards & Judging Committee</h4>
+                <p><strong class="lang" data-en="Mandate:" data-ar="التكليف:">Mandate:</strong> <span class="lang" data-en="Manage the entire awards process with fairness, transparency, and impartiality." data-ar="إدارة عملية الجوائز بأكملها بنزاهة وشفافية وحيادية.">Manage the entire awards process with fairness, transparency, and impartiality.</span></p>
+                <p><strong class="lang" data-en="Key Responsibilities:" data-ar="المسؤوليات الرئيسية:">Key Responsibilities:</strong></p>
+                <ul>
+                    <li class="lang" data-en="Finalize award categories and criteria" data-ar="وضع اللمسات الأخيرة على فئات الجوائز ومعاييرها">Finalize award categories and criteria</li>
+                    <li class="lang" data-en="Design and distribute application forms" data-ar="تصميم وتوزيع نماذج الطلبات">Design and distribute application forms</li>
+                    <li class="lang" data-en="Develop objective scoring rubric" data-ar="تطوير نموذج تقييم موضوعي">Develop objective scoring rubric</li>
+                    <li class="lang" data-en="Manage submissions confidentially" data-ar="إدارة الطلبات بسرية">Manage submissions confidentially</li>
+                    <li class="lang" data-en="Facilitate blind judging process" data-ar="تسهيل عملية التحكيم المعمى">Facilitate blind judging process</li>
+                    <li class="lang" data-en="Present final winner list to Steering Committee" data-ar="تقديم قائمة الفائزين النهائية إلى اللجنة التوجيهية">Present final winner list to Steering Committee</li>
+                </ul>
+                <p><strong class="lang" data-en="Composition:" data-ar="التكوين:">Composition:</strong></p>
+                <ul>
+                    <li class="lang" data-en="Senior NCDC department heads (3-4 members)" data-ar="رؤساء أقسام كبار في المركز الوطني لمكافحة الأمراض (3-4 أعضاء)">Senior NCDC department heads (3-4 members)</li>
+                    <li class="lang" data-en="TCO representative" data-ar="ممثل مكتب التعاون الفني">TCO representative</li>
+                    <li class="lang" data-en="External experts (1-2): University faculty or WHO/partner officials" data-ar="خبراء خارجيون (1-2): أعضاء هيئة تدريس جامعية أو مسؤولون من منظمة الصحة العالمية/الشركاء">External experts (1-2): University faculty or WHO/partner officials</li>
+                </ul>
+            </div>
+
+            <div class="committee-card">
+                <h4 class="lang" data-en="3. Logistics & Event Management Committee" data-ar="3. لجنة اللوجستيات وإدارة الفعاليات">3. Logistics & Event Management Committee</h4>
+                <p><strong class="lang" data-en="Mandate:" data-ar="التكليف:">Mandate:</strong> <span class="lang" data-en="Plan and execute a seamless, professional, and memorable awards ceremony." data-ar="تخطيط وتنفيذ حفل توزيع جوائز سلس ومهني لا يُنسى.">Plan and execute a seamless, professional, and memorable awards ceremony.</span></p>
+                <p><strong class="lang" data-en="Key Responsibilities:" data-ar="المسؤوليات الرئيسية:">Key Responsibilities:</strong></p>
+                <ul>
+                    <li class="lang" data-en="Select and book venue" data-ar="اختيار وحجز المكان">Select and book venue</li>
+                    <li class="lang" data-en="Manage catering, decoration, seating" data-ar="إدارة التموين والديكور والجلوس">Manage catering, decoration, seating</li>
+                    <li class="lang" data-en="Arrange technical needs (AV, lighting, presentations)" data-ar="ترتيب الاحتياجات الفنية (الصوت والصورة، الإضاءة، العروض التقديمية)">Arrange technical needs (AV, lighting, presentations)</li>
+                    <li class="lang" data-en="Procure trophies, plaques, certificates" data-ar="شراء الكؤوس والدروع والشهادات">Procure trophies, plaques, certificates</li>
+                    <li class="lang" data-en="Develop event program and timeline" data-ar="تطوير برنامج وجدول زمني للحدث">Develop event program and timeline</li>
+                    <li class="lang" data-en="Manage invitations, RSVPs, guest registration" data-ar="إدارة الدعوات، وتأكيدات الحضور، وتسجيل الضيوف">Manage invitations, RSVPs, guest registration</li>
+                </ul>
+            </div>
+
+            <div class="committee-card">
+                <h4 class="lang" data-en="4. Communications & Media Committee" data-ar="4. لجنة الاتصالات والإعلام">4. Communications & Media Committee</h4>
+                <p><strong class="lang" data-en="Mandate:" data-ar="التكليف:">Mandate:</strong> <span class="lang" data-en="Generate excitement, celebrate winners, and showcase NCDC achievements." data-ar="إثارة الحماس والاحتفال بالفائزين وعرض إنجازات المركز الوطني لمكافحة الأمراض.">Generate excitement, celebrate winners, and showcase NCDC achievements.</span></p>
+                <p><strong class="lang" data-en="Key Responsibilities:" data-ar="المسؤوليات الرئيسية:">Key Responsibilities:</strong></p>
+                <ul>
+                    <li class="lang" data-en="Create event brand (logo, theme)" data-ar="إنشاء علامة تجارية للحدث (شعار، موضوع)">Create event brand (logo, theme)</li>
+                    <li class="lang" data-en="Manage internal communications" data-ar="إدارة الاتصالات الداخلية">Manage internal communications</li>
+                    <li class="lang" data-en="Design event materials (invitations, programs, posters)" data-ar="تصميم مواد الحدث (دعوات، برامج، ملصقات)">Design event materials (invitations, programs, posters)</li>
+                    <li class="lang" data-en="Arrange professional photography and videography" data-ar="ترتيب التصوير الفوتوغرافي والفيديو الاحترافي">Arrange professional photography and videography</li>
+                    <li class="lang" data-en="Prepare post-event materials and annual report feature" data-ar="إعداد مواد ما بعد الحدث وميزة التقرير السنوي">Prepare post-event materials and annual report feature</li>
+                    <li class="lang" data-en="Coordinate media coverage" data-ar="تنسيق التغطية الإعلامية">Coordinate media coverage</li>
+                </ul>
+            </div>
+
+            <div class="committee-card">
+                <h4 class="lang" data-en="5. Finance & Sponsorship Committee" data-ar="5. لجنة المالية والرعاية">5. Finance & Sponsorship Committee</h4>
+                <p><strong class="lang" data-en="Mandate:" data-ar="التكليف:">Mandate:</strong> <span class="lang" data-en="Manage event budget and explore external support opportunities." data-ar="إدارة ميزانية الحدث واستكشاف فرص الدعم الخارجي.">Manage event budget and explore external support opportunities.</span></p>
+                <p><strong class="lang" data-en="Key Responsibilities:" data-ar="المسؤوليات الرئيسية:">Key Responsibilities:</strong></p>
+                <ul>
+                    <li class="lang" data-en="Develop detailed event budget" data-ar="تطوير ميزانية مفصلة للحدث">Develop detailed event budget</li>
+                    <li class="lang" data-en="Process payments and procurements" data-ar="معالجة المدفوعات والمشتريات">Process payments and procurements</li>
+                    <li class="lang" data-en="Liaise with TCO for potential sponsors (WHO, UNICEF, private sector)" data-ar="التنسيق مع مكتب التعاون الفني للرعاة المحتملين (منظمة الصحة العالمية، اليونيسف، القطاع الخاص)">Liaise with TCO for potential sponsors (WHO, UNICEF, private sector)</li>
+                    <li class="lang" data-en="Track expenses and produce financial report" data-ar="تتبع النفقات وإصدار تقرير مالي">Track expenses and produce financial report</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="submission" class="section">
+            <h2 class="section-title lang" data-en="Submission Requirements" data-ar="متطلبات التقديم">Submission Requirements</h2>
+            <div class="info-box">
+                <h3 class="lang" data-en="Application Form Structure" data-ar="هيكل نموذج الطلب">Application Form Structure</h3>
+                <p class="lang" data-en="All submissions must include the following components:" data-ar="يجب أن تتضمن جميع الطلبات المكونات التالية:">All submissions must include the following components:</p>
+            </div>
+
+            <div class="text-diagram">
+                <h4 class="lang" data-en="Submission Flow" data-ar="تدفق التقديم">Submission Flow</h4>
+                <ol>
+                    <li><strong class="lang" data-en="Project Identification" data-ar="تحديد المشروع">Project Identification</strong>
+                        <ul>
+                            <li class="lang" data-en="Project Title, Department/Unit, Team Members & Roles, Project Duration" data-ar="عنوان المشروع، الإدارة/الوحدة، أعضاء الفريق وأدوارهم، مدة المشروع">Project Title, Department/Unit, Team Members & Roles, Project Duration</li>
+                        </ul>
+                    </li>
+                    <li><strong class="lang" data-en="Problem Statement" data-ar="بيان المشكلة">Problem Statement</strong>
+                         <ul>
+                            <li class="lang" data-en="Description of the public health issue and its importance (max 300 words)" data-ar="وصف قضية الصحة العامة وأهميتها (300 كلمة كحد أقصى)">Description of the public health issue and its importance (max 300 words)</li>
+                        </ul>
+                    </li>
+                    <li><strong class="lang" data-en="Methodology" data-ar="المنهجية">Methodology</strong>
+                         <ul>
+                            <li class="lang" data-en="Approach used, activities conducted, and target audience (max 400 words)" data-ar="النهج المستخدم، والأنشطة المنفذة، والجمهور المستهدف (400 كلمة كحد أقصى)">Approach used, activities conducted, and target audience (max 400 words)</li>
+                        </ul>
+                    </li>
+                    <li><strong class="lang" data-en="Results & Impact" data-ar="النتائج والتأثير">Results & Impact</strong>
+                         <ul>
+                            <li class="lang" data-en="Quantitative and qualitative outcomes, number of people affected (max 400 words)" data-ar="النتائج الكمية والنوعية، وعدد الأشخاص المتأثرين (400 كلمة كحد أقصى)">Quantitative and qualitative outcomes, number of people affected (max 400 words)</li>
+                        </ul>
+                    </li>
+                    <li><strong class="lang" data-en="Innovation & Collaboration" data-ar="الابتكار والتعاون">Innovation & Collaboration</strong>
+                         <ul>
+                            <li class="lang" data-en="Details on innovative aspects and partners involved" data-ar="تفاصيل حول الجوانب المبتكرة والشركاء المشاركين">Details on innovative aspects and partners involved</li>
+                        </ul>
+                    </li>
+                     <li><strong class="lang" data-en="Sustainability & Lessons Learned" data-ar="الاستدامة والدروس المستفادة">Sustainability & Lessons Learned</strong>
+                         <ul>
+                            <li class="lang" data-en="Long-term plan and key recommendations" data-ar="خطة طويلة الأجل وتوصيات رئيسية">Long-term plan and key recommendations</li>
+                        </ul>
+                    </li>
+                    <li><strong class="lang" data-en="Supporting Evidence" data-ar="الأدلة الداعمة">Supporting Evidence</strong>
+                         <ul>
+                            <li class="lang" data-en="Includes data tables, charts, photos, and reports" data-ar="تشمل جداول البيانات والرسوم البيانية والصور والتقارير">Includes data tables, charts, photos, and reports</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <!-- ... formatting guidelines note ... -->
+            <div class="note">
+                <strong class="lang" data-en="Important Formatting Guidelines:" data-ar="إرشادات تنسيق هامة:">Important Formatting Guidelines:</strong>
+                <ul style="margin-top: 10px;">
+                    <li class="lang" data-en="Total submission should not exceed 8 pages (excluding supporting documents)" data-ar="يجب ألا يتجاوز إجمالي الطلب 8 صفحات (باستثناء المستندات الداعمة)">Total submission should not exceed 8 pages (excluding supporting documents)</li>
+                    <li class="lang" data-en="Use Arial or Times New Roman, 12pt font" data-ar="استخدم خط Arial أو Times New Roman، بحجم 12 نقطة">Use Arial or Times New Roman, 12pt font</li>
+                    <li class="lang" data-en="Include page numbers" data-ar="أدرج أرقام الصفحات">Include page numbers</li>
+                    <li class="lang" data-en="Submit as PDF format" data-ar="قدم الملف بصيغة PDF">Submit as PDF format</li>
+                    <li class="lang" data-en="File naming: Department_ProjectTitle_2025.pdf" data-ar="تسمية الملف: Department_ProjectTitle_2025.pdf">File naming: Department_ProjectTitle_2025.pdf</li>
+                    <li class="lang" data-en="Submit to: awards@ncdc.ly by December 5, 2025, 5:00 PM" data-ar="أرسل إلى: awards@ncdc.ly بحلول 5 ديسمبر 2025، الساعة 5:00 مساءً">Submit to: awards@ncdc.ly by December 5, 2025, 5:00 PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="process" class="section">
+            <h2 class="section-title lang" data-en="Judging Process" data-ar="عملية التحكيم">Judging Process</h2>
+            <div class="text-diagram">
+                <h4 class="lang" data-en="Sequence of Events" data-ar="تسلسل الأحداث">Sequence of Events</h4>
+                <ol>
+                    <li class="lang" data-en="<strong>By Dec 5:</strong> Departments submit applications to the TCO Coordinator." data-ar="<strong>بحلول 5 ديسمبر:</strong> تقدم الإدارات الطلبات إلى منسق مكتب التعاون الفني."><strong>By Dec 5:</strong> Departments submit applications to the TCO Coordinator.</li>
+                    <li class="lang" data-en="<strong>Dec 8:</strong> TCO logs, anonymizes, and distributes the blind applications to the Judging Committee." data-ar="<strong>8 ديسمبر:</strong> يقوم مكتب التعاون الفني بتسجيل وإخفاء هوية الطلبات وتوزيعها على لجنة التحكيم."><strong>Dec 8:</strong> TCO logs, anonymizes, and distributes the blind applications to the Judging Committee.</li>
+                    <li class="lang" data-en="<strong>Dec 8-15:</strong> Each judge scores submissions independently." data-ar="<strong>8-15 ديسمبر:</strong> يقوم كل محكم بتقييم الطلبات بشكل مستقل."><strong>Dec 8-15:</strong> Each judge scores submissions independently.</li>
+                    <li class="lang" data-en="<strong>Dec 16:</strong> The Judging Committee meets to discuss scores, resolve discrepancies, and reach a consensus." data-ar="<strong>16 ديسمبر:</strong> تجتمع لجنة التحكيم لمناقشة الدرجات وحل التناقضات والتوصل إلى إجماع."><strong>Dec 16:</strong> The Judging Committee meets to discuss scores, resolve discrepancies, and reach a consensus.</li>
+                    <li class="lang" data-en="<strong>Dec 19:</strong> Final rankings are submitted to the Steering Committee for review and approval." data-ar="<strong>19 ديسمبر:</strong> يتم تقديم التصنيفات النهائية إلى اللجنة التوجيهية للمراجعة والموافقة."><strong>Dec 19:</strong> Final rankings are submitted to the Steering Committee for review and approval.</li>
+                    <li class="lang" data-en="<strong>Dec 22:</strong> Finalists are notified privately before the holiday break." data-ar="<strong>22 ديسمبر:</strong> يتم إخطار المتأهلين للتصفيات النهائية بشكل خاص قبل عطلة الأعياد."><strong>Dec 22:</strong> Finalists are notified privately before the holiday break.</li>
+                    <li class="lang" data-en="<strong>Jan 5:</strong> A public announcement is made to all NCDC staff." data-ar="<strong>5 يناير:</strong> يتم الإعلان العام لجميع موظفي المركز الوطني لمكافحة الأمراض."><strong>Jan 5:</strong> A public announcement is made to all NCDC staff.</li>
+                    <li class="lang" data-en="<strong>Jan 22:</strong> The official Awards Ceremony takes place." data-ar="<strong>22 يناير:</strong> يقام حفل توزيع الجوائز الرسمي."><strong>Jan 22:</strong> The official Awards Ceremony takes place.</li>
+                </ol>
+            </div>
+            <!-- ... fairness and transparency note ... -->
+             <div class="info-box">
+                <h3 class="lang" data-en="Ensuring Fairness & Transparency" data-ar="ضمان النزاهة والشفافية">Ensuring Fairness & Transparency</h3>
+                <ul style="margin-top: 10px;">
+                    <li class="lang" data-en="<strong>Blind Review:</strong> Initial judging done without knowledge of which department submitted" data-ar="<strong>المراجعة المعماة:</strong> يتم التحكيم الأولي دون معرفة القسم الذي قدم الطلب"><strong>Blind Review:</strong> Initial judging done without knowledge of which department submitted</li>
+                    <li class="lang" data-en="<strong>Conflict of Interest:</strong> Judges recuse themselves from scoring their own department's projects" data-ar="<strong>تضارب المصالح:</strong> يتنحى المحكمون عن تقييم مشاريع أقسامهم"><strong>Conflict of Interest:</strong> Judges recuse themselves from scoring their own department's projects</li>
+                    <li class="lang" data-en="<strong>Multiple Judges:</strong> Each submission reviewed by at least 3 independent judges" data-ar="<strong>محكمون متعددون:</strong> تتم مراجعة كل طلب من قبل 3 محكمين مستقلين على الأقل"><strong>Multiple Judges:</strong> Each submission reviewed by at least 3 independent judges</li>
+                    <li class="lang" data-en="<strong>Score Averaging:</strong> Final scores calculated as average of all judges (excluding outliers)" data-ar="<strong>متوسط الدرجات:</strong> يتم حساب الدرجات النهائية كمتوسط لجميع المحكمين (باستثناء القيم المتطرفة)"><strong>Score Averaging:</strong> Final scores calculated as average of all judges (excluding outliers)</li>
+                    <li class="lang" data-en="<strong>Documentation:</strong> All scores and deliberations documented for accountability" data-ar="<strong>التوثيق:</strong> يتم توثيق جميع الدرجات والمداولات للمساءلة"><strong>Documentation:</strong> All scores and deliberations documented for accountability</li>
+                    <li class="lang" data-en="<strong>Appeals Process:</strong> Departments may submit questions (not appeals) about process to Steering Committee" data-ar="<strong>عملية الاستئناف:</strong> يمكن للأقسام تقديم أسئلة (وليس استئنافات) حول العملية إلى اللجنة التوجيهية"><strong>Appeals Process:</strong> Departments may submit questions (not appeals) about process to Steering Committee</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ... remaining sections (Prizes, Program, Budget, Metrics, Next Steps) from previous HTML, ensuring no mermaid syntax ... -->
+
+        <div id="prizes" class="section">
+            <h2 class="section-title lang" data-en="Prize Packages" data-ar="باقات الجوائز">Prize Packages</h2>
+             <!-- ... prize box and table from previous HTML ... -->
+             <div class="prize-box">
+                <h3 class="lang" data-en="🏆 Grand Prize Winner" data-ar="🏆 الفائز بالجائزة الكبرى">🏆 Grand Prize Winner</h3>
+                <div class="prize-item">
+                    <strong class="lang" data-en="Trophy & Recognition:" data-ar="الكأس والتقدير:">Trophy & Recognition:</strong> <span class="lang" data-en="Custom trophy + Director-signed certificate" data-ar="كأس مخصص + شهادة موقعة من المدير">Custom trophy + Director-signed certificate</span>
+                </div>
+                <div class="prize-item">
+                    <strong class="lang" data-en="Professional Development Fund:" data-ar="صندوق التطوير المهني:">Professional Development Fund:</strong> <span class="lang" data-en="25,000 LYD for equipment, software, training, or expert workshops" data-ar="25,000 دينار ليبي للمعدات، البرامج، التدريب، أو ورش عمل الخبراء">25,000 LYD for equipment, software, training, or expert workshops</span>
+                </div>
+                <div class="prize-item">
+                    <strong class="lang" data-en="Conference Attendance:" data-ar="حضور المؤتمرات:">Conference Attendance:</strong> <span class="lang" data-en="Full sponsorship for 2 team members to attend regional/international public health conference (flights, hotel, registration, allowance)" data-ar="رعاية كاملة لشخصين من أعضاء الفريق لحضور مؤتمر إقليمي/دولي للصحة العامة (رحلات طيران، فندق، تسجيل، بدل)">Full sponsorship for 2 team members to attend regional/international public health conference (flights, hotel, registration, allowance)</span>
+                </div>
+                <div class="prize-item">
+                    <strong class="lang" data-en="Feature Recognition:" data-ar="تقدير خاص:">Feature Recognition:</strong> <span class="lang" data-en="Full-page feature in NCDC Annual Report + website spotlight + press release" data-ar="ميزة صفحة كاملة في التقرير السنوي للمركز الوطني لمكافحة الأمراض + تسليط الضوء على الموقع الإلكتروني + بيان صحفي">Full-page feature in NCDC Annual Report + website spotlight + press release</span>
+                </div>
+            </div>
+            <table class="criteria-table">
+                <thead>
+                    <tr>
+                        <th class="lang" data-en="Award Category" data-ar="فئة الجائزة">Award Category</th>
+                        <th class="lang" data-en="Trophy/Plaque" data-ar="الكأس/الدرع">Trophy/Plaque</th>
+                        <th class="lang" data-en="Development Fund" data-ar="صندوق التطوير">Development Fund</th>
+                        <th class="lang" data-en="Additional Benefits" data-ar="مزايا إضافية">Additional Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="lang" data-en="Excellence in Disease Surveillance" data-ar="التميز في مراقبة الأمراض">Excellence in Disease Surveillance</strong></td>
+                        <td class="lang" data-en="Plaque + Certificate" data-ar="درع + شهادة">Plaque + Certificate</td>
+                        <td>15,000 LYD</td>
+                        <td class="lang" data-en="Half-page annual report feature" data-ar="ميزة نصف صفحة في التقرير السنوي">Half-page annual report feature</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Outstanding Outbreak Response" data-ar="الاستجابة المتميزة لتفشي الأمراض">Outstanding Outbreak Response</strong></td>
+                        <td class="lang" data-en="Plaque + Certificate" data-ar="درع + شهادة">Plaque + Certificate</td>
+                        <td>15,000 LYD</td>
+                        <td class="lang" data-en="Half-page annual report feature" data-ar="ميزة نصف صفحة في التقرير السنوي">Half-page annual report feature</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Innovation in Public Health" data-ar="الابتكار في الصحة العامة">Innovation in Public Health</strong></td>
+                        <td class="lang" data-en="Plaque + Certificate" data-ar="درع + شهادة">Plaque + Certificate</td>
+                        <td>15,000 LYD</td>
+                        <td class="lang" data-en="Half-page annual report feature + innovation showcase opportunity" data-ar="ميزة نصف صفحة في التقرير السنوي + فرصة عرض الابتكار">Half-page annual report feature + innovation showcase opportunity</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Health Promotion & Community Engagement" data-ar="تعزيز الصحة والمشاركة المجتمعية">Health Promotion & Community Engagement</strong></td>
+                        <td class="lang" data-en="Plaque + Certificate" data-ar="درع + شهادة">Plaque + Certificate</td>
+                        <td>15,000 LYD</td>
+                        <td class="lang" data-en="Half-page annual report feature" data-ar="ميزة نصف صفحة في التقرير السنوي">Half-page annual report feature</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Collaborative Spirit Award" data-ar="جائزة روح التعاون">Collaborative Spirit Award</strong></td>
+                        <td class="lang" data-en="Plaque + Certificate" data-ar="درع + شهادة">Plaque + Certificate</td>
+                        <td>12,000 LYD</td>
+                        <td class="lang" data-en="Recognition at partner meetings (WHO, UNICEF, etc.)" data-ar="تقدير في اجتماعات الشركاء (منظمة الصحة العالمية، اليونيسف، إلخ)">Recognition at partner meetings (WHO, UNICEF, etc.)</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Public Health Champion (Individual)" data-ar="بطل الصحة العامة (فردي)">Public Health Champion (Individual)</strong></td>
+                        <td class="lang" data-en="Trophy + Certificate" data-ar="كأس + شهادة">Trophy + Certificate</td>
+                        <td class="lang" data-en="Professional certification course sponsorship (e.g., PMP, epidemiology certificate)" data-ar="رعاية دورة شهادة مهنية (مثل PMP، شهادة علم الأوبئة)">Professional certification course sponsorship (e.g., PMP, epidemiology certificate)</td>
+                        <td class="lang" data-en="Personal profile in annual report + mentorship opportunity" data-ar="ملف شخصي في التقرير السنوي + فرصة توجيه">Personal profile in annual report + mentorship opportunity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="program" class="section">
+             <h2 class="section-title lang" data-en="Event Day Program" data-ar="برنامج يوم الحدث">Event Day Program</h2>
+             <!-- ... schedule table from previous HTML ... -->
+             <div class="info-box">
+                <h3 class="lang" data-en="Thursday, January 22, 2026 - Detailed Schedule" data-ar="الخميس، 22 يناير 2026 - الجدول التفصيلي">Thursday, January 22, 2026 - Detailed Schedule</h3>
+            </div>
+            <table class="criteria-table">
+                <thead>
+                    <tr>
+                        <th class="lang" data-en="Time" data-ar="الوقت">Time</th>
+                        <th class="lang" data-en="Activity" data-ar="النشاط">Activity</th>
+                        <th class="lang" data-en="Duration" data-ar="المدة">Duration</th>
+                        <th class="lang" data-en="Responsible" data-ar="المسؤول">Responsible</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 9:30 AM</td>
+                        <td class="lang" data-en="Registration & Coffee<br>Project Showcase Setup (Poster presentations)" data-ar="التسجيل والقهوة<br>إعداد عرض المشاريع (عروض الملصقات)">Registration & Coffee<br>Project Showcase Setup (Poster presentations)</td>
+                        <td class="lang" data-en="30 min" data-ar="30 دقيقة">30 min</td>
+                        <td class="lang" data-en="Logistics Committee" data-ar="لجنة اللوجستيات">Logistics Committee</td>
+                    </tr>
+                    <tr>
+                        <td>9:30 - 10:30 AM</td>
+                        <td class="lang" data-en="<strong>Project Showcase</strong><br>Finalists display posters, interact with attendees" data-ar="<strong>عرض المشاريع</strong><br>يعرض المتأهلون النهائيون الملصقات ويتفاعلون مع الحضور"><strong>Project Showcase</strong><br>Finalists display posters, interact with attendees</td>
+                        <td class="lang" data-en="60 min" data-ar="60 دقيقة">60 min</td>
+                        <td class="lang" data-en="All finalists" data-ar="جميع المتأهلين النهائيين">All finalists</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 - 10:45 AM</td>
+                        <td class="lang" data-en="Seating & Opening Music" data-ar="الجلوس والموسيقى الافتتاحية">Seating & Opening Music</td>
+                        <td class="lang" data-en="15 min" data-ar="15 دقيقة">15 min</td>
+                        <td class="lang" data-en="Logistics Committee" data-ar="لجنة اللوجستيات">Logistics Committee</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 10:50 AM</td>
+                        <td class="lang" data-en="National Anthem" data-ar="النشيد الوطني">National Anthem</td>
+                        <td class="lang" data-en="5 min" data-ar="5 دقائق">5 min</td>
+                        <td class="lang" data-en="MC" data-ar="مقدم الحفل">MC</td>
+                    </tr>
+                    <tr>
+                        <td>10:50 - 11:00 AM</td>
+                        <td class="lang" data-en="Welcome Remarks<br>MC introduces event purpose and program" data-ar="كلمات الترحيب<br>يقدم مقدم الحفل غرض الحدث وبرنامجه">Welcome Remarks<br>MC introduces event purpose and program</td>
+                        <td class="lang" data-en="10 min" data-ar="10 دقائق">10 min</td>
+                        <td class="lang" data-en="Master of Ceremonies" data-ar="مقدم الحفل">Master of Ceremonies</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 11:15 AM</td>
+                        <td class="lang" data-en="<strong>Opening Address</strong><br>NCDC Director-General speech on 2025 achievements and importance of excellence" data-ar="<strong>الكلمة الافتتاحية</strong><br>كلمة المدير العام للمركز الوطني لمكافحة الأمراض حول إنجازات 2025 وأهمية التميز"><strong>Opening Address</strong><br>NCDC Director-General speech on 2025 achievements and importance of excellence</td>
+                        <td class="lang" data-en="15 min" data-ar="15 دقيقة">15 min</td>
+                        <td class="lang" data-en="Director-General" data-ar="المدير العام">Director-General</td>
+                    </tr>
+                    <tr>
+                        <td>11:15 - 11:25 AM</td>
+                        <td class="lang" data-en="<strong>Video Highlight Reel</strong><br>"NCDC 2025: A Year in Public Health" (featuring finalist projects)" data-ar="<strong>فيديو أبرز الأحداث</strong><br>"المركز الوطني لمكافحة الأمراض 2025: عام في الصحة العامة" (يضم مشاريع المتأهلين النهائيين)"><strong>Video Highlight Reel</strong><br>"NCDC 2025: A Year in Public Health" (featuring finalist projects)</td>
+                        <td class="lang" data-en="10 min" data-ar="10 دقائق">10 min</td>
+                        <td class="lang" data-en="Communications Committee" data-ar="لجنة الاتصالات">Communications Committee</td>
+                    </tr>
+                    <tr>
+                        <td>11:25 AM - 12:15 PM</td>
+                        <td class="lang" data-en="<strong>Awards Presentation - Part 1</strong><br>Categories 7, 6, 5 (individual awards first, then team awards)<br>Each: Announcement → Finalist recognition → Winner revealed → Photo" data-ar="<strong>تقديم الجوائز - الجزء الأول</strong><br>الفئات 7، 6، 5 (الجوائز الفردية أولاً، ثم جوائز الفرق)<br>لكل فئة: إعلان ← تكريم المتأهلين النهائيين ← الكشف عن الفائز ← صورة"><strong>Awards Presentation - Part 1</strong><br>Categories 7, 6, 5 (individual awards first, then team awards)<br>Each: Announcement → Finalist recognition → Winner revealed → Photo</td>
+                        <td class="lang" data-en="50 min" data-ar="50 دقيقة">50 min</td>
+                        <td class="lang" data-en="Director-General + TCO Head" data-ar="المدير العام + رئيس مكتب التعاون الفني">Director-General + TCO Head</td>
+                    </tr>
+                    <tr>
+                        <td>12:15 - 12:25 PM</td>
+                        <td class="lang" data-en="Musical Interlude / Short Break" data-ar="فاصل موسيقي / استراحة قصيرة">Musical Interlude / Short Break</td>
+                        <td class="lang" data-en="10 min" data-ar="10 دقائق">10 min</td>
+                        <td class="lang" data-en="Logistics Committee" data-ar="لجنة اللوجستيات">Logistics Committee</td>
+                    </tr>
+                    <tr>
+                        <td>12:25 - 1:15 PM</td>
+                        <td class="lang" data-en="<strong>Awards Presentation - Part 2</strong><br>Categories 4, 3, 2 (building anticipation)" data-ar="<strong>تقديم الجوائز - الجزء الثاني</strong><br>الفئات 4، 3، 2 (بناء التشويق)"><strong>Awards Presentation - Part 2</strong><br>Categories 4, 3, 2 (building anticipation)</td>
+                        <td class="lang" data-en="50 min" data-ar="50 دقيقة">50 min</td>
+                        <td class="lang" data-en="Director-General + Senior Officials" data-ar="المدير العام + كبار المسؤولين">Director-General + Senior Officials</td>
+                    </tr>
+                    <tr>
+                        <td>1:15 - 1:35 PM</td>
+                        <td class="lang" data-en="<strong>Keynote Address</strong><br>Distinguished speaker on "The Future of Public Health in Libya"<br>(WHO representative, Minister of Health, or renowned public health expert)" data-ar="<strong>الكلمة الرئيسية</strong><br>متحدث متميز حول "مستقبل الصحة العامة في ليبيا"<br>(ممثل منظمة الصحة العالمية، وزير الصحة، أو خبير صحة عامة مشهور)"><strong>Keynote Address</strong><br>Distinguished speaker on "The Future of Public Health in Libya"<br>(WHO representative, Minister of Health, or renowned public health expert)</td>
+                        <td class="lang" data-en="20 min" data-ar="20 دقيقة">20 min</td>
+                        <td class="lang" data-en="Guest Keynote Speaker" data-ar="المتحدث الرئيسي الضيف">Guest Keynote Speaker</td>
+                    </tr>
+                    <tr>
+                        <td>1:35 - 1:50 PM</td>
+                        <td class="lang" data-en="<strong>Grand Prize Announcement</strong><br>Director's Grand Prize: Project of the Year<br>Extended celebration, team comes to stage, acceptance speech" data-ar="<strong>إعلان الجائزة الكبرى</strong><br>جائزة المدير الكبرى: مشروع العام<br>احتفال مطول، يصعد الفريق إلى المسرح، كلمة القبول"><strong>Grand Prize Announcement</strong><br>Director's Grand Prize: Project of the Year<br>Extended celebration, team comes to stage, acceptance speech</td>
+                        <td class="lang" data-en="15 min" data-ar="15 دقيقة">15 min</td>
+                        <td class="lang" data-en="Director-General" data-ar="المدير العام">Director-General</td>
+                    </tr>
+                    <tr>
+                        <td>1:50 - 2:00 PM</td>
+                        <td class="lang" data-en="<strong>Closing Remarks</strong><br>TCO Head thanks participants, judges, sponsors<br>Motivational closing message for 2026" data-ar="<strong>الكلمات الختامية</strong><br>يشكر رئيس مكتب التعاون الفني المشاركين والحكام والرعاة<br>رسالة ختامية تحفيزية لعام 2026"><strong>Closing Remarks</strong><br>TCO Head thanks participants, judges, sponsors<br>Motivational closing message for 2026</td>
+                        <td class="lang" data-en="10 min" data-ar="10 دقائق">10 min</td>
+                        <td class="lang" data-en="TCO Head (Project Lead)" data-ar="رئيس مكتب التعاون الفني (قائد المشروع)">TCO Head (Project Lead)</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 - 2:10 PM</td>
+                        <td class="lang" data-en="Group Photo - All Winners" data-ar="صورة جماعية - جميع الفائزين">Group Photo - All Winners</td>
+                        <td class="lang" data-en="10 min" data-ar="10 دقائق">10 min</td>
+                        <td class="lang" data-en="Communications Committee" data-ar="لجنة الاتصالات">Communications Committee</td>
+                    </tr>
+                    <tr>
+                        <td>2:10 - 3:30 PM</td>
+                        <td class="lang" data-en="<strong>Networking Lunch</strong><br>Catered meal, informal networking, media interviews" data-ar="<strong>غداء للتواصل</strong><br>وجبة مقدمة، تواصل غير رسمي، مقابلات إعلامية"><strong>Networking Lunch</strong><br>Catered meal, informal networking, media interviews</td>
+                        <td class="lang" data-en="80 min" data-ar="80 دقيقة">80 min</td>
+                        <td class="lang" data-en="Logistics Committee" data-ar="لجنة اللوجستيات">Logistics Committee</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="budget" class="section">
+            <h2 class="section-title lang" data-en="Estimated Budget" data-ar="الميزانية التقديرية">Estimated Budget</h2>
+             <!-- ... budget table from previous HTML ... -->
+              <table class="criteria-table">
+                <thead>
+                    <tr>
+                        <th class="lang" data-en="Budget Category" data-ar="فئة الميزانية">Budget Category</th>
+                        <th class="lang" data-en="Description" data-ar="الوصف">Description</th>
+                        <th class="lang" data-en="Estimated Cost (LYD)" data-ar="التكلفة التقديرية (دينار ليبي)">Estimated Cost (LYD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="lang" data-en="Professional Development Funds" data-ar="صناديق التطوير المهني">Professional Development Funds</strong></td>
+                        <td class="lang" data-en="Awards for winning teams (as per prize structure)" data-ar="جوائز للفرق الفائزة (حسب هيكل الجوائز)">Awards for winning teams (as per prize structure)</td>
+                        <td>70,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Conference Attendance" data-ar="حضور المؤتمرات">Conference Attendance</strong></td>
+                        <td class="lang" data-en="International travel for Grand Prize winners (2 people)" data-ar="السفر الدولي للفائزين بالجائزة الكبرى (شخصان)">International travel for Grand Prize winners (2 people)</td>
+                        <td>15,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Trophies & Certificates" data-ar="الكؤوس والشهادات">Trophies & Certificates</strong></td>
+                        <td class="lang" data-en="Custom trophies (2), plaques (5), framed certificates (all winners + finalists)" data-ar="كؤوس مخصصة (2)، دروع (5)، شهادات مؤطرة (جميع الفائزين + المتأهلين النهائيين)">Custom trophies (2), plaques (5), framed certificates (all winners + finalists)</td>
+                        <td>5,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Venue & Catering" data-ar="المكان والتموين">Venue & Catering</strong></td>
+                        <td class="lang" data-en="Hall setup, lunch for 150-200 people, coffee breaks" data-ar="تجهيز القاعة، غداء لـ 150-200 شخص، استراحات قهوة">Hall setup, lunch for 150-200 people, coffee breaks</td>
+                        <td>12,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Audio-Visual & Technical" data-ar="الصوتيات والمرئيات والفنيات">Audio-Visual & Technical</strong></td>
+                        <td class="lang" data-en="Sound system, projectors, screens, lighting, technical support" data-ar="نظام صوتي، أجهزة عرض، شاشات، إضاءة، دعم فني">Sound system, projectors, screens, lighting, technical support</td>
+                        <td>6,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Printing & Materials" data-ar="الطباعة والمواد">Printing & Materials</strong></td>
+                        <td class="lang" data-en="Invitations, programs, posters, banners, table materials" data-ar="دعوات، برامج، ملصقات، لافتات، مواد للطاولات">Invitations, programs, posters, banners, table materials</td>
+                        <td>4,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Photography & Videography" data-ar="التصوير الفوتوغرافي والفيديو">Photography & Videography</strong></td>
+                        <td class="lang" data-en="Professional photographer, videographer, editing, highlight video production" data-ar="مصور فوتوغرافي محترف، مصور فيديو، مونتاج، إنتاج فيديو أبرز الأحداث">Professional photographer, videographer, editing, highlight video production</td>
+                        <td>5,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Contingency" data-ar="الطوارئ">Contingency</strong></td>
+                        <td class="lang" data-en="Unexpected expenses, last-minute needs" data-ar="نفقات غير متوقعة، احتياجات اللحظة الأخيرة">Unexpected expenses, last-minute needs</td>
+                        <td>3,000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong class="lang" data-en="TOTAL ESTIMATED BUDGET" data-ar="إجمالي الميزانية التقديرية">TOTAL ESTIMATED BUDGET</strong></td>
+                        <td><strong>120,000 LYD</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="metrics" class="section">
+            <h2 class="section-title lang" data-en="Success Metrics & Evaluation" data-ar="مقاييس النجاح والتقييم">Success Metrics & Evaluation</h2>
+            <!-- ... metrics table from previous HTML ... -->
+            <div class="info-box">
+                <h3 class="lang" data-en="How will we measure the success of this inaugural event?" data-ar="كيف سنقيس نجاح هذا الحدث الافتتاحي؟">How will we measure the success of this inaugural event?</h3>
+            </div>
+            <table class="criteria-table">
+                <thead>
+                    <tr>
+                        <th class="lang" data-en="Metric Category" data-ar="فئة المقياس">Metric Category</th>
+                        <th class="lang" data-en="Specific Indicators" data-ar="المؤشرات المحددة">Specific Indicators</th>
+                        <th class="lang" data-en="Target" data-ar="الهدف">Target</th>
+                        <th class="lang" data-en="Measurement Method" data-ar="طريقة القياس">Measurement Method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="lang" data-en="Participation Rate" data-ar="معدل المشاركة">Participation Rate</strong></td>
+                        <td class="lang" data-en="
+                            • Number of project submissions<br>
+                            • % of NCDC departments participating
+                        " data-ar="
+                            • عدد المشاريع المقدمة<br>
+                            • نسبة الأقسام المشاركة في المركز الوطني لمكافحة الأمراض
+                        ">
+                            • Number of project submissions<br>
+                            • % of NCDC departments participating
+                        </td>
+                        <td class="lang" data-en="
+                            ≥15 submissions<br>
+                            ≥60% of departments
+                        " data-ar="
+                            ≥15 طلبًا<br>
+                            ≥60% من الأقسام
+                        ">
+                            ≥15 submissions<br>
+                            ≥60% of departments
+                        </td>
+                        <td class="lang" data-en="Submission database tracking" data-ar="تتبع قاعدة بيانات الطلبات">Submission database tracking</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Event Attendance" data-ar="حضور الحدث">Event Attendance</strong></td>
+                        <td class="lang" data-en="
+                            • Number of attendees<br>
+                            • Senior leadership presence<br>
+                            • Partner attendance
+                        " data-ar="
+                            • عدد الحضور<br>
+                            • حضور القيادة العليا<br>
+                            • حضور الشركاء
+                        ">
+                            • Number of attendees<br>
+                            • Senior leadership presence<br>
+                            • Partner attendance
+                        </td>
+                        <td class="lang" data-en="
+                            150-200 people<br>
+                            100% of department heads<br>
+                            ≥3 partner organizations
+                        " data-ar="
+                            150-200 شخص<br>
+                            100% من رؤساء الأقسام<br>
+                            ≥3 منظمات شريكة
+                        ">
+                            150-200 people<br>
+                            100% of department heads<br>
+                            ≥3 partner organizations
+                        </td>
+                        <td class="lang" data-en="Registration records, sign-in sheets" data-ar="سجلات التسجيل، قوائم الحضور">Registration records, sign-in sheets</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Satisfaction Scores" data-ar="درجات الرضا">Satisfaction Scores</strong></td>
+                        <td class="lang" data-en="
+                            • Winner satisfaction<br>
+                            • Attendee satisfaction<br>
+                            • Judge satisfaction with process
+                        " data-ar="
+                            • رضا الفائزين<br>
+                            • رضا الحضور<br>
+                            • رضا الحكام عن العملية
+                        ">
+                            • Winner satisfaction<br>
+                            • Attendee satisfaction<br>
+                            • Judge satisfaction with process
+                        </td>
+                        <td class="lang" data-en="
+                            ≥4.5/5.0<br>
+                            ≥4.0/5.0<br>
+                            ≥4.0/5.0
+                        " data-ar="
+                            ≥4.5/5.0<br>
+                            ≥4.0/5.0<br>
+                            ≥4.0/5.0
+                        ">
+                            ≥4.5/5.0<br>
+                            ≥4.0/5.0<br>
+                            ≥4.0/5.0
+                        </td>
+                        <td class="lang" data-en="Post-event surveys (distributed day after event)" data-ar="استبيانات ما بعد الحدث (توزع في اليوم التالي للحدث)">Post-event surveys (distributed day after event)</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Communication Reach" data-ar="مدى الوصول الإعلامي">Communication Reach</strong></td>
+                        <td class="lang" data-en="
+                            • Staff awareness of winners<br>
+                            • External media mentions<br>
+                            • Social media engagement
+                        " data-ar="
+                            • وعي الموظفين بالفائزين<br>
+                            • الإشارات الإعلامية الخارجية<br>
+                            • التفاعل على وسائل التواصل الاجتماعي
+                        ">
+                            • Staff awareness of winners<br>
+                            • External media mentions<br>
+                            • Social media engagement
+                        </td>
+                        <td class="lang" data-en="
+                            100% of NCDC staff<br>
+                            ≥5 media articles<br>
+                            ≥1000 combined engagements
+                        " data-ar="
+                            100% من موظفي المركز الوطني لمكافحة الأمراض<br>
+                            ≥5 مقالات إعلامية<br>
+                            ≥1000 تفاعل مشترك
+                        ">
+                            100% of NCDC staff<br>
+                            ≥5 media articles<br>
+                            ≥1000 combined engagements
+                        </td>
+                        <td class="lang" data-en="Internal survey, media monitoring, analytics" data-ar="استبيان داخلي، مراقبة إعلامية، تحليلات">Internal survey, media monitoring, analytics</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Operational Excellence" data-ar="التميز التشغيلي">Operational Excellence</strong></td>
+                        <td class="lang" data-en="
+                            • Event starts on time<br>
+                            • Program stays on schedule<br>
+                            • No major technical issues
+                        " data-ar="
+                            • يبدأ الحدث في الوقت المحدد<br>
+                            • يظل البرنامج في الموعد المحدد<br>
+                            • لا توجد مشكلات فنية كبيرة
+                        ">
+                            • Event starts on time<br>
+                            • Program stays on schedule<br>
+                            • No major technical issues
+                        </td>
+                        <td class="lang" data-en="
+                            100%<br>
+                            ±10 minutes<br>
+                            0 disruptions >5 min
+                        " data-ar="
+                            100%<br>
+                            ±10 دقائق<br>
+                            0 انقطاع > 5 دقائق
+                        ">
+                            100%<br>
+                            ±10 minutes<br>
+                            0 disruptions >5 min
+                        </td>
+                        <td class="lang" data-en="Event log, MC/logistics reports" data-ar="سجل الحدث، تقارير مقدم الحفل/اللوجستيات">Event log, MC/logistics reports</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="lang" data-en="Financial Management" data-ar="الإدارة المالية">Financial Management</strong></td>
+                        <td class="lang" data-en="
+                            • Budget adherence<br>
+                            • Sponsorship secured
+                        " data-ar="
+                            • الالتزام بالميزانية<br>
+                            • تأمين الرعاية
+                        ">
+                            • Budget adherence<br>
+                            • Sponsorship secured
+                        </td>
+                        <td class="lang" data-en="
+                            ±5% of budget<br>
+                            ≥20% of budget from sponsors
+                        " data-ar="
+                            ±5% من الميزانية<br>
+                            ≥20% من الميزانية من الرعاة
+                        ">
+                            ±5% of budget<br>
+                            ≥20% of budget from sponsors
+                        </td>
+                        <td class="lang" data-en="Financial reports, sponsorship tracking" data-ar="التقارير المالية، تتبع الرعاية">Financial reports, sponsorship tracking</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="next-steps" class="section">
+            <h2 class="section-title lang" data-en="Immediate Next Steps" data-ar="الخطوات التالية العاجلة">Immediate Next Steps</h2>
+             <!-- ... action required box from previous HTML ... -->
+             <div class="info-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">
+                <h3 style="color: white;" class="lang" data-en="🚀 Action Required This Week" data-ar="🚀 الإجراءات المطلوبة هذا الأسبوع">🚀 Action Required This Week</h3>
+                <ol style="margin-top: 15px; font-size: 1.1em;">
+                    <li class="lang" data-en="<strong>Monday, October 21:</strong> TCO presents this proposal to Director-General for approval" data-ar="<strong>الاثنين، 21 أكتوبر:</strong> يقدم مكتب التعاون الفني هذا الاقتراح إلى المدير العام للموافقة عليه"><strong>Monday, October 21:</strong> TCO presents this proposal to Director-General for approval</li>
+                    <li class="lang" data-en="<strong>Tuesday, October 22:</strong> Upon approval, draft official announcement memo" data-ar="<strong>الثلاثاء، 22 أكتوبر:</strong> عند الموافقة، تتم صياغة مذكرة الإعلان الرسمي"><strong>Tuesday, October 22:</strong> Upon approval, draft official announcement memo</li>
+                    <li class="lang" data-en="<strong>Wednesday, October 23:</strong> Begin identifying and contacting committee members" data-ar="<strong>الأربعاء، 23 أكتوبر:</strong> بدء تحديد أعضاء اللجنة والاتصال بهم"><strong>Wednesday, October 23:</strong> Begin identifying and contacting committee members</li>
+                    <li class="lang" data-en="<strong>Thursday, October 24:</strong> Finalize announcement and prepare distribution" data-ar="<strong>الخميس، 24 أكتوبر:</strong> وضع اللمسات الأخيرة على الإعلان وإعداد التوزيع"><strong>Thursday, October 24:</strong> Finalize announcement and prepare distribution</li>
+                    <li class="lang" data-en="<strong>Monday, October 28:</strong> SEND OFFICIAL ANNOUNCEMENT to all NCDC departments" data-ar="<strong>الاثنين، 28 أكتوبر:</strong> إرسال الإعلان الرسمي إلى جميع إدارات المركز الوطني لمكافحة الأمراض"><strong>Monday, October 28:</strong> SEND OFFICIAL ANNOUNCEMENT to all NCDC departments</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3 class="lang" data-en="NCDC Public Health Excellence Awards 2025" data-ar="جوائز المركز الوطني لمكافحة الأمراض للتميز في الصحة العامة 2025">NCDC Public Health Excellence Awards 2025</h3>
+        <p style="margin-top: 15px;" class="lang" data-en="Celebrating Innovation • Recognizing Excellence • Inspiring the Future" data-ar="الاحتفاء بالابتكار • تقدير التميز • إلهام المستقبل">Celebrating Innovation • Recognizing Excellence • Inspiring the Future</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">
+            <span class="lang" data-en="Hosted by: National Center for Disease Control - Director General" data-ar="برعاية: المركز الوطني لمكافحة الأمراض - المدير العام">Hosted by: National Center for Disease Control - Director General</span><br>
+            <span class="lang" data-en="Proposed & Coordinated by: Technical Cooperation Office (TCO)" data-ar="مقترح ومنسق من قبل: مكتب التعاون الفني (TCO)">Proposed & Coordinated by: Technical Cooperation Office (TCO)</span>
+        </p>
+        <p style="margin-top: 20px; font-size: 0.8em; opacity: 0.8;" class="lang" data-en="For questions or more information, contact: awards@ncdc.ly" data-ar="للأسئلة أو لمزيد من المعلومات، اتصل بـ: awards@ncdc.ly">
+            For questions or more information, contact: awards@ncdc.ly
+        </p>
+    </div>
+</div>
+
+<script>
+    function switchLanguage(lang) {
+        // Set document language and direction
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        
+        // Switch text for all elements with data attributes
+        document.querySelectorAll('[data-en]').forEach(el => {
+            // Use innerHTML to correctly render icons inside headings
+            el.innerHTML = el.dataset[lang];
+        });
+
+        // Update active button state
+        document.querySelectorAll('.lang-switcher button').forEach(button => {
+            button.classList.remove('active');
+        });
+        document.querySelector(`.lang-switcher button[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+    }
+
+    // Initialize with English on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        switchLanguage('en');
+    });
+</script>
+</body>
+</html>
